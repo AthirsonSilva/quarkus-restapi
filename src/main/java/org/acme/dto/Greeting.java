@@ -1,5 +1,14 @@
 package org.acme.dto;
 
-public record Greeting(String message) {
+import java.io.Serializable;
 
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+public class Greeting implements Serializable {
+	private String messsage;
 }

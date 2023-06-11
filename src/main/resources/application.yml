@@ -1,7 +1,10 @@
 quarkus:
   mongodb:
-    connection-string: mongodb://localhost:27017
+    connection-string: mongodb://localhost:27017/quarkus
     database: quarkus
+    hosts:
+      - host: localhost
+        port: 27017
 
   # datasource:
   #   db-kind: postgresql

@@ -28,5 +28,4 @@ public class FruitServiceImpl implements FruitService {
 	public Fruit create(Fruit fruit) {
 		return fruitRepository.create(fruit);
 	}
-
 }
