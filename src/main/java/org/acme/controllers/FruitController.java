@@ -1,4 +1,4 @@
-package org.acme.resources;
+package org.acme.controllers;
 
 import java.util.List;
 
@@ -16,7 +16,8 @@ import jakarta.ws.rs.core.MediaType;
 @Path("/api/v1/fruits")
 @Consumes(MediaType.APPLICATION_JSON)
 @Produces(MediaType.APPLICATION_JSON)
-public class FruitResource {
+public class FruitController {
+
 	@Inject
 	private FruitService fruitService;
 

@@ -15,6 +15,7 @@ import jakarta.inject.Inject;
 
 @ApplicationScoped
 public class FruitRepositoryImpl implements FruitRepository {
+
 	@Inject
 	MongoClient mongoClient;
 
