@@ -1,19 +1,16 @@
-package org.acme;
+package org.acme
 
-import static io.restassured.RestAssured.given;
-
-import org.junit.jupiter.api.Test;
-
-import io.quarkus.test.junit.QuarkusTest;
+import io.quarkus.test.junit.QuarkusTest
+import io.restassured.RestAssured
+import org.junit.jupiter.api.Test
 
 @QuarkusTest
-public class BookResourceTest {
-
-	@Test
-	public void testHelloEndpoint() {
-		given()
-				.when().get("/hello")
-				.then()
-				.statusCode(200);
-	}
+open class BookResourceTest {
+    @Test
+    fun testHelloEndpoint() {
+        RestAssured.given()
+            .`when`()["/hello"]
+            .then()
+            .statusCode(200)
+    }
 }
